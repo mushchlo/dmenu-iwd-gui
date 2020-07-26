@@ -11,7 +11,7 @@
    1. A working iwd/iwd+dhcpcd setup
    2. An iwd directory that has read/write (cd) permissions for "other" groups, or an iwd directory in a public location. Default location is /var/lib/iwd, and in my case, I just left it there and made it globally readable and writeable. Maybe not super secure, but quite frankly I'm willing to take whatever slight risk it may pose for convenience's sake. The following commands will do the trick for you (as root): 
         `chmod o=rw /var/lib/iwd && chmod o=rw /var/lib/iwd/*`
-   3. I use font-awesome 5 for my wifi symbols for strength, so either change those characters to a string/symbol of your preference or make sure you have a variant of fa-5 in your dmenu fonts array, as you can't call dmenu with two fonts, so my solution is just to let dmenu handle the fonts on it's own.
+   3. I use font-awesome 5 for my wifi symbols for strength, but I've changed the "symbols" to 1 2 and 3, so either use an ASCII string/character or make sure your symbol font is in your dmenu fonts array, as you can't call dmenu with two fonts, so my solution is just to let dmenu handle the fonts on it's own, without any font flag for this script.
 
 ## Tips and tricks
 
@@ -36,4 +36,4 @@ If you have a feature request, or a bug report, or an optimization tip, please a
    
 
 
-\* : not actually suckless, as it isn't written in C, but whatever, its a philosophy, not a set of laws.w
+\* : not actually suckless, as it isn't written in C, but whatever, its a philosophy, not a set of laws.
