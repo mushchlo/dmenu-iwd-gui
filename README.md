@@ -2,9 +2,9 @@
 
    This is a little dmenu script I've been working on, and since it's finally usable, I thought I'd share it with the world! What does it do, you ask? It's a dmenu GUI for iwd/iwctl, so it shows you nearby networks, along with their strength and security type, allows you to connect to it with a saved password, and authenticate with a new network, all within dmenu!
    
-https://github.com/mushchlo/dmenu-iwd-gui/blob/master/dmenu-iwd-gui-1.png?raw=true
-https://github.com/mushchlo/dmenu-iwd-gui/blob/master/dmenu-iwd-gui-2.png?raw=true
-https://github.com/mushchlo/dmenu-iwd-gui/blob/master/dmenu-iwd-gui-3.png?raw=true
+https://raw.githubusercontent.com/mushchlo/dmenu-iwd-gui/master/dmenu-iwd-gui-1.png
+https://raw.githubusercontent.com/mushchlo/dmenu-iwd-gui/master/dmenu-iwd-gui-2.png
+https://raw.githubusercontent.com/mushchlo/dmenu-iwd-gui/master/dmenu-iwd-gui-3.png
    
    I figured a suckless\* solution is somewhat missing for a niche such as this, as on a desktop running a standalone WM, you learn to do without things like this, but quite frankly, on a laptop, it gets old having to go into the terminal to scan, get-networks, and connect every time I change location. Hence, this project!
 
