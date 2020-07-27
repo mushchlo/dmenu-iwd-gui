@@ -32,7 +32,7 @@ https://raw.githubusercontent.com/mushchlo/dmenu-iwd-gui/master/dmenu-iwd-gui-3.
 \n
 </details>
 
-   I'd like to fix the fact that I'm currently using three text stream editors (awk, sed, and tr) for jobs that I know could be condensed into one editor (probably ak) if I just stop being lazy, but that is an easyish fix if anybody wants to fork the project for it.
+   I'd like to fix the fact that I'm currently using three text stream editors (awk, sed, and tr) for jobs that I know could be condensed into one editor (probably awk) if I just stop being lazy, but that is an easyish fix if anybody wants to fork the project for it.
    
    Regarding the dmenu font issue, I can't really think of any sort of convenient solution other than using only one font and specifying it in `$dmenu`, or figuring out a way to call dmenu with multiple fonts specified.
 
