@@ -2,6 +2,10 @@
 
    This is a little dmenu script I've been working on, and since it's finally usable, I thought I'd share it with the world! What does it do, you ask? It's a dmenu GUI for iwd/iwctl, so it shows you nearby networks, along with their strength and security type, allows you to connect to it with a saved password, and authenticate with a new network, all within dmenu!
    
+https://raw.githubusercontent.com/mushchlo/dmenu-iwd-gui/master/dmenu-iwd-gui-1.png
+https://raw.githubusercontent.com/mushchlo/dmenu-iwd-gui/master/dmenu-iwd-gui-2.png
+https://raw.githubusercontent.com/mushchlo/dmenu-iwd-gui/master/dmenu-iwd-gui-3.png
+   
    I figured a suckless\* solution is somewhat missing for a niche such as this, as on a desktop running a standalone WM, you learn to do without things like this, but quite frankly, on a laptop, it gets old having to go into the terminal to scan, get-networks, and connect every time I change location. Hence, this project!
 
    You'll notice there's quite a bit of very hackish text editing, and my code is messy, so it might not be clear what's going on in every stage, but it's pretty short, and my commenting should hopefully make things clear.
@@ -11,7 +15,7 @@
    1. A working iwd/iwd+dhcpcd setup
    2. An iwd directory that has read/write (cd) permissions for "other" groups, or an iwd directory in a public location. Default location is /var/lib/iwd, and in my case, I just left it there and made it globally readable and writeable. Maybe not super secure, but quite frankly I'm willing to take whatever slight risk it may pose for convenience's sake. The following commands will do the trick for you (as root): 
         `chmod o=rw /var/lib/iwd && chmod o=rw /var/lib/iwd/*`
-   3. I use font-awesome 5 for my wifi symbols for strength, so either change those characters to a string/symbol of your preference or make sure you have a variant of fa-5 in your dmenu fonts array, as you can't call dmenu with two fonts, so my solution is just to let dmenu handle the fonts on it's own.
+   3. I use font-awesome 5 for my wifi symbols for strength, but I've changed the "symbols" to 1 2 and 3, so either use an ASCII string/character or make sure your symbol font is in your dmenu fonts array, as you can't call dmenu with two fonts, so my solution is just to let dmenu handle the fonts on it's own, without any font flag for this script.
 
 ## Tips and tricks
 
@@ -28,7 +32,7 @@
 \n
 </details>
 
-   I'd like to fix the fact that I'm currently using three text stream editors (awk, sed, and tr) for jobs that I know could be condensed into one editor (probably ak) if I just stop being lazy, but that is an easyish fix if anybody wants to fork the project for it.
+   I'd like to fix the fact that I'm currently using three text stream editors (awk, sed, and tr) for jobs that I know could be condensed into one editor (probably awk) if I just stop being lazy, but that is an easyish fix if anybody wants to fork the project for it.
    
    Regarding the dmenu font issue, I can't really think of any sort of convenient solution other than using only one font and specifying it in `$dmenu`, or figuring out a way to call dmenu with multiple fonts specified.
 
@@ -36,4 +40,4 @@ If you have a feature request, or a bug report, or an optimization tip, please a
    
 
 
-\* : not actually suckless, as it isn't written in C, but whatever, its a philosophy, not a set of laws.w
+\* : not actually suckless, as it isn't written in C, but whatever, its a philosophy, not a set of laws.
